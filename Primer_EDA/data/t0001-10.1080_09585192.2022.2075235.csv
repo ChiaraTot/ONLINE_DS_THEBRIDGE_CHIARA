@@ -1,0 +1,15 @@
+"Construct","Scale name","Items","Example item","Range","Source"
+"Daily questionnaire",,,,,
+"Well-being","Positive and negative affect schedule","3","Today, to what extent do you feel this way?Today, I feel……relaxed, …calm, …laid-back","1 (not at all) to 7 (extremely)","Watson et al., 1988"
+"Perceived productivity","Task-based job performance","3","Today, I fulfilled all the requirements of the job.","1 (not at all) to 7 (completely)","Goodman & Svyantek, 1999"
+"Engagement","Utrecht work engagement scale","3","Today, to what extent do you feel this way concerning work?Today, I felt bursting with energy.","1 (never) and 7 (always)","Schaufeli & Bakker, 2004"
+"General questionnaire",,,,,
+"Self-efficacy","General self-efficacy scale","3","I can always manage to solve difficult problems if I try hard enough.","1 (strongly disagree) to 7 (strongly agree)","Schwarzer et al., 1997"
+"Self-goal setting","Revised self-leadership questionnaire","2","I think about the goals that I intend to achieve in the future.","1 (strongly disagree) to 7 (strongly agree)","Houghton & Neck, 2002"
+"Remote work experience","Author-created","1","Do you in general have experience of working from home (home office)?","1 (none) to 4 (a lot)",""
+"Work equipment","Author-created","6","I have a sufficiently fast Internet connection.","‘no’ or ‘yes’",""
+"Job security","Author-created","1","How secure do you currently feel your job to be?","1 (not safe at all) to 7 (very safe)",""
+"Job latitude","Instrument for stress-oriented task analysis","3","Can you decide for yourself how to do your work?","1 (very little) to 5 (very much)","Semmer et al., 1995"
+"Communication during COVID-19","Organizational change questionnaire","3","I am regularly informed on how the change concerning COVID-19 measures is going.","1 (strongly disagree) to 7 (strongly agree)","Bouckenooghe et al., 2009"
+"Leader autonomy support","Work climate questionnaire","3","I feel that my manager provides choices and options.","1 (strongly disagree) to 7 (strongly agree)","Baard et al., 2004"
+"Social support from colleagues and leaders","Social support scales","4","To what extent can you rely on the following people when it gets hard at work?","1 (not at all) to 4 (a lot)","Frese, 1989"
