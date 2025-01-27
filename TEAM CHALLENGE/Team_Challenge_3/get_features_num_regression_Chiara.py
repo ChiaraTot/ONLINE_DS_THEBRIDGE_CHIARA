@@ -16,10 +16,6 @@ def get_features_num_regression(df, target_col, umbral_corr, pvalue=None):
         Lista de columnas que cumplen los criterios o None si hay error
     '''
     ## Validaciones de entrada
-    # Verifica que df sea un DataFrame
-    if not isinstance(df, pd.DataFrame):
-        print("Error: El primer argumento debe ser un DataFrame")
-        return None
     # Verifica que target_col exista en el DataFrame y sea una cadena
     if target_col not in df.columns:
         print(f"Error: no encuentro {target_col} en el dataframe.")
@@ -28,12 +24,12 @@ def get_features_num_regression(df, target_col, umbral_corr, pvalue=None):
         print(f"Error: {target_col} debe ser una cadena de texto")
         return None
     # Verifica que la columna target_col sea numérica y con alta cardinalidad
-    if not np.issubdtype(df[target_col].dtype, np.number):
+    if not isinstance(df[target_col].dtype, np.number):
         print(f"Error: La columna {target_col} debe ser numérica")
         return None
     n_unique = df[target_col].nunique()
-    if n_unique < 30:  # umbral arbitrario para considerar alta cardinalidad
-        print(f"Error: La columna {target_col} debe tener alta cardinalidad (tiene {n_unique} valores únicos)")
+    if n_unique < 15:  # umbral arbitrario para considerar alta cardinalidad
+        print(f"Error: La columna {target_col} debe tener alta cardinalidad")
         return None
     
     # Verifica que umbral_corr está entre 0 y 1
@@ -48,7 +44,7 @@ def get_features_num_regression(df, target_col, umbral_corr, pvalue=None):
     
 
     # Lista para almacenar las columnas que cumplen con los criterios
-    col_num= features_num = []
+    features_num = []
 
     # Iterar sobre todas las columnas numéricas del dataframe 
     # excluiendo la target y las numericas con cardinalidad baja que pueden ser consideradas categoricas 
