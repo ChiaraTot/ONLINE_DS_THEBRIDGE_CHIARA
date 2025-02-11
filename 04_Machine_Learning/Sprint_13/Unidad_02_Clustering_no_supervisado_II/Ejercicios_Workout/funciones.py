@@ -4,6 +4,7 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 
+
 # Defino funcion para calcular y monitorar la cantidad de valores nulos por columna
 def Calcular_missing(df):
     print("\nCantidad de valores nulos y porcentaje por columna:")
